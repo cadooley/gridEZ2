@@ -1,0 +1,10 @@
+Package: gridEZ2
+Title: gridEZ: generate a gridded sampling frame
+Version: 2.1
+Authors@R: c(person("Claire A.", "Dooley", email = "c.dooley@ucl.ac.uk", role = c("aut", "cre")))
+Description: gridEZ generates a sampling frame consisting of gridded enumeration zones (EZs). EZs are constructed based on a target population count per EZ whilst being restricted by a maximum geographic size. gridEZ uses gridded population counts and two stratification datasets that must all be rasters in the same coordinate reference system (CRS). For household or population surveys, the stratification datasets could be settlement types and administrative units, for example. If one or no stratification is needed, the "strata" and "settlement" rasters (specified in the function parameters) can simply contain one value everywhere. Note that large areas for a single stratum is not advised.
+Imports: parallel, terra, data.table
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
