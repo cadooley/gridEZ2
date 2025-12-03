@@ -127,8 +127,8 @@ gridEZ <- function(population_raster_path, strata1_raster_path, strata2_raster_p
     # prep & check clump information  #
     ###################################
 
-    min_pop_per_EZ <- target_pop_per_EZ * 0.66  # 66% of target pop per EZ
-    max_pop_per_EZ <- target_pop_per_EZ * 1.33  # 33% of target pop per EZ
+    min_pop_per_EZ <- target_pop_per_EZ * 0.66666  # 66% of target pop per EZ
+    max_pop_per_EZ <- target_pop_per_EZ * 1.33333  # 33% of target pop per EZ
     subpop_rast <- terra::crop(terra::rast(population_raster),
                                terra::ext(c(clump_x[[2]][1], clump_x[[2]][2],
                                             clump_x[[2]][3], clump_x[[2]][4])))
